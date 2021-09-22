@@ -1,0 +1,57 @@
+body {
+    margin: 25px;
+    color: #a7a3a4;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 70px;
+}
+/* click + mouseover */
+.click, .mouseover {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: inherit;
+    box-shadow: 0 .3rem 1rem 0 grey;
+}
+.click:hover, .btnStyle {
+    background-color: black;
+    color: white;
+}
+/* focus */
+.focusBg {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+/* copy & paste */ 
+span {
+    text-decoration: underline;
+}
+.hide {
+    text-decoration: none;
+}
+/* drag & drop */
+h2 {
+  color: #000;
+}
+[data-drop-target] {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    background-color: gainsboro;
+    display: flex;
+    margin: auto;
+    }
+    .drag-enter {
+      border: 2px dotted navy;
+    }
+    .box {
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    position: relative;
+    }
+    .navy {
+    background-color: navy;
+    }

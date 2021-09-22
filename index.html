@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>
+    <h1>Event Listeners</h1>
+    <!-- click -->
+    <h2>1. Click event</h2>
+    <button class="btn click">Click Me</button>
+    <!-- mouseover -->
+    <h2>2. Mouseover event</h2>
+    <button class="btn mouseover">Mouseover</button>
+    <!-- focus -->
+    <h2>3. Focus event</h2>
+    <label for="focus" class="focusLabel">Click the input field</label><br>
+        <input type="text" class="input focus">
+    <!-- keydown -->
+    <h2>3. Keydown event</h2>
+    <label for="keydown" class="keydownLabel">Enter a key</label><br>
+        <input type="text" class="input keydown">
+    <!-- copy -->
+    <h2>4. + 5. Copy & paste event</h2>
+    <h3 class="copy">Copy <span>this</span> paragraph</h3>
+    <!-- paste -->
+    <label for="paste">And paste it here: </label>
+        <input type="text" class="input paste">
+    <!-- drag & drop -->
+    <h2>6. + 7. Drag & drop event</h2>
+    <div data-drop-target="true">
+        <div id="box" draggable="true" class="box navy"></div>
+    </div>
+    <div data-drop-target="true"></div>
+
     
     <script src="main.js"></script>
 </body>
