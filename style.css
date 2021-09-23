@@ -1,13 +1,20 @@
 body {
     margin: 25px;
     color: #a7a3a4;
-    text-align: center;
 }
 h1 {
     margin-bottom: 70px;
 }
-/* click + mouseover */
-.click, .mouseover {
+/* click */
+.done {
+    text-decoration: line-through;
+    color: green;
+}
+ul {
+    cursor: pointer;
+}
+/* mouseover */
+#btn, .mouseover {
     border-radius: 5px;
     border: none;
     padding: 10px 20px;
@@ -15,7 +22,7 @@ h1 {
     background-color: inherit;
     box-shadow: 0 .3rem 1rem 0 grey;
 }
-.click:hover, .btnStyle {
+.btnStyle {
     background-color: black;
     color: white;
 }
@@ -31,7 +38,7 @@ span {
 .hide {
     text-decoration: none;
 }
-/* drag & drop */
+/* dragenter */
 h2 {
   color: #000;
 }
@@ -40,8 +47,6 @@ h2 {
     width: 100px;
     margin: 25px;
     background-color: gainsboro;
-    display: flex;
-    margin: auto;
     }
     .drag-enter {
       border: 2px dotted navy;
@@ -52,6 +57,13 @@ h2 {
     opacity: 0.8;
     position: relative;
     }
-    .navy {
-    background-color: navy;
+    .img {
+    background-color: peachpuff;
     }
+/* submit */
+.colorInvalid {
+    border: 2px solid red;
+}
+.colorValid {
+    border: 2px solid green;
+}

@@ -11,7 +11,16 @@
     <h1>Event Listeners</h1>
     <!-- click -->
     <h2>1. Click event</h2>
-    <button class="btn click">Click Me</button>
+    Adopt a pet:
+    <select id="ddlPets">
+        <option value=""></option>
+        <option value="1">Cat</option>
+        <option value="2">Dog</option>
+        <option value="3">Snake</option>
+        <option value="4">Rabbit</option>
+        <option value="5">Mouse</option>
+    </select>
+    <button id="btn">SELECT</button>
     <!-- mouseover -->
     <h2>2. Mouseover event</h2>
     <button class="btn mouseover">Mouseover</button>
@@ -21,20 +30,32 @@
         <input type="text" class="input focus">
     <!-- keydown -->
     <h2>3. Keydown event</h2>
-    <label for="keydown" class="keydownLabel">Enter a key</label><br>
+    <label for="keydown" class="keydownLabel">Enter a numeric value</label><br>
         <input type="text" class="input keydown">
+            <p class="newHTML"></p>
     <!-- copy -->
     <h2>4. + 5. Copy & paste event</h2>
     <h3 class="copy">Copy <span>this</span> paragraph</h3>
     <!-- paste -->
     <label for="paste">And paste it here: </label>
         <input type="text" class="input paste">
-    <!-- drag & drop -->
-    <h2>6. + 7. Drag & drop event</h2>
+    <!-- dragenter -->
+    <h2>6. Dragenter event</h2>
     <div data-drop-target="true">
-        <div id="box" draggable="true" class="box navy"></div>
+        <div id="box" draggable="true"><img src="http://meganelndn.com/diana_stroie/logo_final_white2.png" alt="img" class="box img"></div>
     </div>
     <div data-drop-target="true"></div>
+    <!-- submit -->
+    <h2>7. Submit</h2>
+    <form name="logIn" id="logIn">
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" required>
+        <p class="firstParagraph"></p>
+        <label for="password">Password</label><br>
+        <input type="text" name="password" id="password" required>
+        <p class="secondParagraph"></p>
+        <input type="submit" id="submit">
+    </form>
 
     
     <script src="main.js"></script>
